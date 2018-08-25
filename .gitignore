@@ -13,3 +13,4 @@ pom.xml
 .nrepl-port
 .idea/
 whip.iml
+.rebel_readline_history
