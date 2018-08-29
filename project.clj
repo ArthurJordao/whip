@@ -32,7 +32,7 @@
                            ;; Comment this out once it no longer serves you.
                            :open-urls ["http://localhost:3449/index.html"]}
 
-                :compiler {:main whip.core
+                :compiler {:main whip.main
                            :asset-path "js/compiled/out"
                            :output-to "resources/public/js/compiled/whip.js"
                            :output-dir "resources/public/js/compiled/out"
@@ -46,7 +46,7 @@
                {:id "min"
                 :source-paths ["src"]
                 :compiler {:output-to "resources/public/js/compiled/whip.js"
-                           :main whip.core
+                           :main whip.main
                            :optimizations :advanced
                            :pretty-print false}}]}
 
@@ -54,7 +54,7 @@
              ;; :server-port 3449 ;; default
              ;; :server-ip "127.0.0.1"
 
-             :css-dirs ["resources/public/css"] ;; watch and update CSS
+             :css-dirs ["resources/public/css"]} ;; watch and update CSS
 
              ;; Start an nREPL server into the running figwheel process
              ;; :nrepl-port 7888
@@ -87,7 +87,7 @@
 
              ;; to pipe all the output to the repl
              ;; :server-logfile false
-             }
+
 
 
   ;; Setting up nREPL for Figwheel and ClojureScript dev
