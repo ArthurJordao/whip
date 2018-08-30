@@ -1,5 +1,6 @@
 (ns ^:figwheel-always whip.main
-    (:require [reagent.core :as reagent :refer [atom]]))
+    (:require [reagent.core :as reagent :refer [atom]]
+              [whip.a-init]))
 
 
 (defonce app-state
