@@ -1,4 +1,4 @@
-(ns ^:figwheel-always whip.main
+(ns ^:figwheel-always whip.core
     (:require [reagent.core :as reagent :refer [atom]]
               [whip.a-init]))
 
@@ -55,6 +55,7 @@
   [:div
    [:h1 "Whip project management tool"]
    [whip-content app-state]])
+
 
 
 (reagent/render-component [whip-main app-state]
